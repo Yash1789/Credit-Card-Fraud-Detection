@@ -4,12 +4,88 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Credit Card Fraud Detection</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #a2c2e1, #f5f5f5);
+            color: #333;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container {
+            background: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+            padding: 30px;
+            max-width: 600px;
+            width: 100%;
+            text-align: center;
+            border: 2px solid #007bff;
+        }
+        h1 {
+            color: #007bff;
+            font-size: 28px;
+            margin-bottom: 20px;
+        }
+        p {
+            color: #555;
+            font-size: 16px;
+            margin-bottom: 30px;
+            line-height: 1.5;
+        }
+        input[type="file"] {
+            margin-bottom: 20px;
+            font-size: 16px;
+            padding: 10px;
+            border: 2px solid #007bff;
+            border-radius: 5px;
+        }
+        button {
+            background-color: #28a745;
+            border: none;
+            color: #ffffff;
+            padding: 12px 25px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 18px;
+            margin-top: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        button:hover {
+            background-color: #218838;
+        }
+        .footer {
+            margin-top: 30px;
+            font-size: 14px;
+            color: #6c757d;
+        }
+        .footer a {
+            color: #007bff;
+            text-decoration: none;
+        }
+        .footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
 </head>
 <body>
-    <h1>Upload Excel File for Fraud Detection</h1>
-    <form action="/upload" method="post" enctype="multipart/form-data">
-        <input type="file" name="file" required>
-        <button type="submit">Upload and Process</button>
-    </form>
+    <div class="container">
+        <h1>Credit Card Fraud Detection</h1>
+        <p>Welcome to our fraud detection service. Please upload your Excel file containing transaction data for analysis. Our system will process the data to identify potentially fraudulent transactions based on advanced machine learning models.</p>
+        <form action="/upload" method="post" enctype="multipart/form-data">
+            <input type="file" name="file" accept=".xls, .xlsx" required>
+            <button type="submit">Upload and Analyze</button>
+        </form>
+        <div class="footer">
+            <p>Powered by <a href="https://www.omfys.com" target="_blank">OMFYS GROUP</a></p>
+        </div>
+    </div>
 </body>
 </html>

@@ -1,0 +1,287 @@
+"pip install faker"
+
+import pandas as pd
+import numpy as np
+from faker import Faker
+import random
+import string
+
+# Initialize Faker
+fake = Faker()
+
+# Generating data
+num_samples = 2000
+
+# Function to generate customer_id
+def generate_customer_id():
+    letters = ''.join(random.choices(string.ascii_uppercase, k=2))  # Two random uppercase letters
+    numbers = ''.join(random.choices(string.digits, k=3))  # Three random digits
+    return letters + numbers
+
+# Generate customer IDs
+customer_ids = [generate_customer_id() for _ in range(num_samples)]
+
+# Generate unique 15-digit transaction IDs
+transaction_ids = set()
+while len(transaction_ids) < num_samples:
+    transaction_ids.add(f"{np.random.randint(10**14, 10**15, dtype=np.int64)}")
+
+# Convert set to list
+transaction_ids = list(transaction_ids)
+
+# Create the DataFrame
+data = {
+    'customer_id': customer_ids,
+    'customer_name': [fake.name() for _ in range(num_samples)],
+    'credit_card_number': [fake.credit_card_number(card_type="visa") for _ in range(num_samples)],
+    'amount_deducted': np.random.uniform(1, 500, num_samples),
+    'transaction_id': transaction_ids,
+    
+    'customer_latitude': np.random.uniform(-90, 90, num_samples),
+    'customer_longitude': np.random.uniform(-180, 180, num_samples),
+    'merchant_latitude': np.random.uniform(-90, 90, num_samples),
+    'merchant_longitude': np.random.uniform(-180, 180, num_samples),
+    'customer_state': [fake.state_abbr() for _ in range(num_samples)],
+    'merchant_state': [fake.state_abbr() for _ in range(num_samples)],
+    'transaction_amount': np.random.uniform(1, 500, num_samples),
+    'transaction_time': [fake.date_time_this_year() for _ in range(num_samples)],
+}
+
+df = pd.DataFrame(data)
+df['transaction_date'] = df['transaction_time'].dt.date
+df['transaction_hour'] = df['transaction_time'].dt.hour
+
+df
+
+# Define how many transactions to duplicate
+num_to_duplicate = 500  # Number of transactions to repeat
+
+
+# Choose random customers to duplicate
+customers_to_duplicate = np.random.choice(df['customer_id'].unique(), num_to_duplicate, replace=False)
+
+# Create a DataFrame with duplicate transactions
+duplicate_data = df[df['customer_id'].isin(customers_to_duplicate)].copy()
+
+# Adjust if there are more rows than needed
+# Ensure we only take num_to_duplicate rows
+duplicate_data = duplicate_data.head(num_to_duplicate)
+
+# Modify merchant details for duplicates
+# Use .loc to set new values
+duplicate_data.loc[:, 'merchant_latitude'] = np.random.uniform(-90, 90, duplicate_data.shape[0])
+duplicate_data.loc[:, 'merchant_longitude'] = np.random.uniform(-180, 180, duplicate_data.shape[0])
+duplicate_data.loc[:, 'merchant_state'] = [fake.state_abbr() for _ in range(duplicate_data.shape[0])]
+
+
+# Assign new transaction IDs for duplicates to avoid conflicts
+duplicate_data.loc[:, 'transaction_id'] = range(num_samples + 1, num_samples + 1 + duplicate_data.shape[0])
+
+# Combine original and duplicated data
+df_final = pd.concat([df, duplicate_data], ignore_index=True)
+
+# Define file path for saving the DataFrame
+file_path = r'C:\Users\yash.kadam\Downloads\SQL File\credit_data.xlsx'  # Adjust as needed
+
+
+# Save the DataFrame to an Excel file
+df_final.to_excel(file_path, index=False)
+
+
+"pip install pandas openpyxl"
+
+
+# Load the data
+df = pd.read_excel(file_path)
+
+df.head(10)
+
+# Define unusual hours (late-night, midnight, dawn, twilight)
+# Define unusual hours
+def get_unusual_rating(hour):
+    if 22 <= hour < 24 or 0 <= hour < 8:
+        return 1
+    return 0
+
+df['unusual_rating'] = df['transaction_hour'].apply(get_unusual_rating)
+
+"pip install geopy"
+
+
+from geopy.distance import great_circle
+
+# Calculate distance in km
+def calculate_distance(row):
+    return great_circle(
+        (row['customer_latitude'], row['customer_longitude']),
+        (row['merchant_latitude'], row['merchant_longitude'])
+    ).km
+
+df['distance'] = df.apply(calculate_distance, axis=1)
+
+
+# Define distance rating
+def get_distance_rating(distance):
+    if distance > 15000:
+        return 1
+    elif distance > 10000:
+        return 0.75
+    elif distance > 5000:
+        return 0.5
+    else:
+        return 0.25
+
+df['distance_rating'] = df['distance'].apply(get_distance_rating)
+
+
+# Define state rating
+df['state_rating'] = (df['customer_state'] != df['merchant_state']).astype(int)
+
+# Define frequency rating
+df['limit_rating'] = 0  # Placeholder
+
+# Calculate transaction frequency
+frequency = df.groupby(['customer_latitude', 'customer_longitude', 'transaction_date']).size()
+frequency = frequency.reset_index(name='frequency')
+
+def get_frequency_rating(row):
+    return min(1, frequency[(frequency['customer_latitude'] == row['customer_latitude']) & 
+                             (frequency['customer_longitude'] == row['customer_longitude']) & 
+                             (frequency['transaction_date'] == row['transaction_date'])]['frequency'].values[0] / 5)
+
+df['limit_rating'] = df.apply(get_frequency_rating, axis=1)
+
+
+# Calculate average rating
+df['average_rating'] = (df['distance_rating'] + df['state_rating'] + df['limit_rating'] + df['unusual_rating']) / 4
+
+# Define fraud risk levels
+def get_fraud_risk(average_rating):
+    if 0.0 <= average_rating < 0.4:
+        return 'low'
+    elif 0.4 <= average_rating < 0.7:
+        return 'moderate'
+    else:
+        return 'high'
+
+df['fraud_risk'] = df['average_rating'].apply(get_fraud_risk)
+
+
+import pickle
+from sklearn.ensemble import RandomForestClassifier
+
+# Create and train a model (example)
+model = RandomForestClassifier()
+# Train model with data here...
+
+# Save the model
+with open('model.pkl', 'wb') as model_file:
+    pickle.dump(model, model_file)
+
+
+from sklearn.model_selection import train_test_split
+from sklearn.linear_model import LogisticRegression
+from sklearn.ensemble import RandomForestClassifier
+from sklearn.metrics import classification_report, confusion_matrix, roc_auc_score
+from sklearn.metrics import accuracy_score, f1_score, precision_score, recall_score
+from sklearn.preprocessing import LabelEncoder
+from sklearn.preprocessing import StandardScaler
+
+label=LabelEncoder()
+df['fraud_risk'] = label.fit_transform(df['fraud_risk'])
+
+
+df['fraud_risk'].unique
+
+df['fraud_risk'].value_counts()
+
+
+# Define features and target
+features = ['distance_rating', 'state_rating', 'limit_rating', 'unusual_rating']
+target = ['fraud_risk']
+X = df[features]
+y = df[target]
+
+# Split data
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.3, random_state=42)
+
+
+# Train model
+model = RandomForestClassifier(n_estimators=100, random_state=42)
+model.fit(X_train, y_train)
+
+
+scaler = StandardScaler()
+X_train_scaled = scaler.fit_transform(X_train)
+
+
+
+# Save the trained model and scaler
+with open('model.pkl', 'wb') as model_file:
+    pickle.dump((model, scaler), model_file)
+
+with open('scaler.pkl', 'wb') as scaler_file:
+    pickle.dump(scaler, scaler_file)
+
+
+
+# Evaluate model
+y_pred = model.predict(X_test)
+
+print("Confusion Matrix:")
+print(confusion_matrix(y_test, y_pred))
+
+print("\nClassification Report:")
+print(classification_report(y_test, y_pred))
+
+
+# Assuming y_test are the true labels and y_pred are the predicted labels
+accuracy = accuracy_score(y_test, y_pred)
+
+# Convert accuracy to percentage
+accuracy_percentage = accuracy * 100
+
+print(f"Accuracy: {accuracy_percentage:.2f}%")
+
+
+# Assuming y_test and y_pred are your true and predicted labels respectively
+
+# Print Confusion Matrix
+print("Confusion Matrix:")
+print(confusion_matrix(y_test, y_pred))
+
+# Print Classification Report
+print("\nClassification Report:")
+print(classification_report(y_test, y_pred))
+
+
+# Inspect predicted fraud cases
+df_test = X_test.copy()
+df_test['true_label'] = y_test
+df_test['predicted_label'] = y_pred
+
+# Filter to see actual fraud cases that were predicted as fraud
+frauds_detected = df_test[(df_test['true_label'] == 1) & (df_test['predicted_label'] == 1)]
+print("Detected Frauds:")
+print(frauds_detected)
+
+# Filter to see actual fraud cases that were predicted as non-fraud
+missed_frauds = df_test[(df_test['true_label'] == 1) & (df_test['predicted_label'] == 0)]
+print("\nMissed Frauds:")
+print(missed_frauds)
+
+
+# Specify the path where you want to save the file
+file_path = r'C:\Users\yash.kadam\Downloads\SQL File\credit_data2.xlsx'  # For Windows
+
+# Save DataFrame to the specified path
+df.to_excel(file_path, index=False)
+
+
+
+
+import joblib
+
+joblib.dump(model, 'model.pkl')
+
+

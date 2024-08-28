@@ -1,0 +1,101 @@
+First_Name,Last_Name,CC_Num,Street,City,State1,Category1,Customer_Lat,Customer_Long,Merchant_Lat,Merchant_Long,Occupation,Amount,Use Chip,Merchant Name,Merchant City,Merchant State,Zip,MCC,Errors1,Is_Fraud,Family Size,Age,Gender,Income,Marital Status,Predicted_Fraud,Distance,Distance_Rating,DateT
+David,Doe,5467389536756435,345 Redwood St,Springfield,GA,Sports,31.20,-117.25,34.98,-75.13,Salesperson,253.31,Y ,Walmart,Greenville,OH,98101,5732,0,0,3,62,F,32863.00,Married,1,1362.91,0.6,21-Feb-23
+John,Brown,5467389536756435,678 Willow St,Oldtown,FL,Books,33.86,-110.25,45.81,-98.37,Teacher,170.18,Y ,Best Buy,Newtown,OH,48226,7011,1,1,4,26,M,32042.00,Divorced,1,2079.04,0.7,24-Mar-23
+Bob,Johnson,5467389536756437,987 Cedar St,Hilltown,PA,Entertainment,36.52,-103.25,56.64,-121.61,Doctor,98.92,N,Olive Garden,Hilltown,TX,98101,5912,1,0,2,58,M,82998.00,Married,1,2795.17,0.8,19-May-23
+Bob,Doe,5467389536756435,321 Maple St,Metropolis,NC,Dining,39.18,-96.25,67.47,-144.85,Salesperson,91.48,Y ,Target,Metropolis,GA,94105,7011,1,1,2,54,F,62836.00,Married,1,3511.30,0.8,19-Feb-23
+Frank,Walker,5467389536756439,654 Birch St,Hilltown,TX,Health,41.84,-89.25,78.30,-168.09,Artist,127.84,N,Amazon,Springfield,MI,48226,5732,0,0,3,69,M,51705.00,Widowed,1,4227.43,0.7,23-May-23
+Hank,Taylor,5467389536756440,987 Cedar St,Oldtown,TX,Clothing,44.50,-82.25,89.13,-191.33,Nurse,118.06,N,Amazon,Franklin,CA,90210,4789,1,0,1,30,F,95048.00,Single,1,4943.56,0.5,22-Jun-23
+Bob,Nelson,5467389536756435,321 Maple St,Lakeview,NY,Sports,47.16,-75.25,99.96,-214.57,Driver,357.75,Y ,Macy's,Greenville,MI,33801,5812,1,0,2,59,F,54480.00,Divorced,1,5659.69,0.7,11-Sep-23
+David,Doe,5467389536756442,321 Maple St,Lakeview,CA,Dining,49.82,-68.25,110.79,-237.81,Doctor,387.12,N,Travelodge,Rivertown,OH,98101,5814,0,0,4,60,F,50955.00,Divorced,1,6375.82,0.7,12-Mar-23
+Alice,Johnson,5467389536756443,678 Willow St,Greenville,NY,Dining,52.48,-61.25,121.62,-261.05,Chef,188.11,N,Olive Garden,Rivertown,FL,94105,5411,1,0,4,60,F,64064.00,Widowed,1,7091.95,0.5,28-Feb-23
+Carol,Walker,5467389536756444,345 Redwood St,Franklin,CA,Entertainment,55.14,-54.25,132.45,-284.29,Teacher,88.10,N,Best Buy,Rivertown,IL,98101,5812,0,0,2,47,F,31762.00,Divorced,1,7808.08,0.6,28-Jul-23
+Frank,Johnson,5467389536756445,345 Redwood St,Newtown,TX,Books,57.80,-47.25,143.28,-307.53,Driver,325.92,N,Travelodge,Salem,OH,98101,5411,1,1,4,50,M,47436.00,Divorced,1,8524.21,0.6,15-Apr-23
+Eva,Nelson,5467389536756446,345 Redwood St,Springfield,FL,Groceries,60.46,-40.25,154.11,-330.77,Lawyer,173.09,N,Olive Garden,Greenville,MI,33101,5812,1,0,4,56,F,65441.00,Divorced,1,9240.34,0.6,20-Jan-23
+Grace,Johnson,5467389536756435,678 Willow St,Franklin,CA,Dining,63.12,-33.25,164.94,-354.01,Engineer,466.80,Y ,Olive Garden,Hilltown,GA,33101,5732,0,0,5,54,F,37013.00,Married,1,9956.47,0.4,17-Apr-23
+Grace,Brown,5467389536756435,321 Maple St,Newtown,CA,Dining,65.78,-26.25,175.77,-377.25,Engineer,396.44,Y ,Olive Garden,Franklin,CA,62704,5699,1,1,4,45,M,40841.00,Divorced,1,10672.60,0.7,25-Oct-23
+Jane,Brown,5467389536756435,789 Pine St,Hilltown,IL,Clothing,68.44,-19.25,186.60,-400.49,Nurse,494.00,Y ,Travelodge,Oldtown,PA,30301,5814,0,1,2,47,M,88059.00,Divorced,1,11388.73,0.4,25-Jun-23
+Eva,Johnson,5467389536756450,321 Maple St,Greenville,MI,Electronics,71.10,-12.25,197.43,-423.73,Lawyer,444.81,N,Target,Rivertown,PA,75001,5814,1,1,2,51,F,81789.00,Single,1,12104.86,0.4,2-Feb-23
+Frank,Brown,5467389536756451,345 Redwood St,Hilltown,GA,Sports,73.76,-5.25,208.26,-446.97,Teacher,12.60,N,Macy's,Metropolis,NC,98101,4789,0,1,1,68,M,90088.00,Widowed,1,12820.99,0.6,9-Apr-23
+Frank,White,5467389536756435,678 Willow St,Rivertown,FL,Electronics,76.42,1.75,219.09,-470.21,Lawyer,39.56,Y ,Amazon,Franklin,IL,10001,5732,0,1,3,63,M,84750.00,Widowed,1,13537.12,0.7,8-Aug-23
+Grace,Smith,5467389536756453,678 Willow St,Lakeview,TX,Dining,79.08,8.75,229.92,-493.45,Lawyer,450.11,N,Target,Hilltown,NY,30301,5732,1,0,2,23,F,86581.00,Married,1,14253.25,0.7,6-Feb-23
+Jane,Johnson,5467389536756454,987 Cedar St,Lakeview,OH,Beauty,81.74,15.75,240.75,-516.69,Salesperson,68.28,N,Travelodge,Greenville,GA,75001,5814,0,1,4,20,F,89421.00,Divorced,1,14969.38,0.4,16-Feb-23
+David,Nelson,5467389536756455,456 Oak St,Salem,PA,Travel,84.40,22.75,251.58,-539.93,Nurse,301.84,N,Costco,Salem,PA,48226,5999,1,0,1,57,M,91889.00,Divorced,1,15685.51,0.5,24-Aug-23
+Hank,Smith,5467389536756435,789 Pine St,Metropolis,TX,Electronics,87.06,29.75,262.41,-563.17,Chef,183.86,Y ,Travelodge,Franklin,PA,94105,7011,1,0,5,59,M,82378.00,Divorced,1,16401.64,0.6,10-Oct-23
+Grace,White,5467389536756457,789 Pine St,Newtown,NY,Beauty,89.72,36.75,273.24,-586.41,Doctor,26.55,N,Best Buy,Franklin,TX,33101,4111,1,1,1,32,M,63767.00,Divorced,1,17117.77,0.7,21-May-23
+Hank,Lee,5467389536756458,234 Aspen St,Metropolis,NC,Beauty,92.38,43.75,284.07,-609.65,Teacher,50.61,N,Starbucks,Lakeview,FL,48226,5732,1,0,4,40,F,48855.00,Married,1,17833.90,0.8,1-Mar-23
+Carol,Adams,5467389536756459,456 Oak St,Lakeview,GA,Clothing,95.04,50.75,294.90,-632.89,Salesperson,385.26,N,Travelodge,Metropolis,FL,62704,5812,0,0,2,31,F,78737.00,Single,1,18550.03,0.8,24-Dec-23
+Bob,Johnson,5467389536756460,987 Cedar St,Newtown,CA,Electronics,97.70,57.75,305.73,-656.13,Teacher,422.78,N,Starbucks,Newtown,FL,30301,5732,1,1,1,32,M,62873.00,Widowed,1,19266.16,0.4,15-Jan-23
+John,Brown,5467389536756461,234 Aspen St,Greenville,FL,Entertainment,100.36,64.75,316.56,-679.37,Engineer,187.98,N,Costco,Oldtown,CA,33101,5814,1,0,4,47,M,44445.00,Single,1,19982.29,0.6,3-Dec-23
+Bob,Doe,5467389536756462,654 Birch St,Metropolis,IL,Beauty,103.02,71.75,327.39,-702.61,Teacher,130.92,N,Target,Hilltown,FL,90210,5699,1,1,5,67,M,60624.00,Divorced,1,20698.42,0.5,20-Apr-23
+David,Doe,5467389536756463,123 Elm St,Greenville,GA,Dining,105.68,78.75,338.22,-725.85,Nurse,251.86,N,Macy's,Newtown,TX,33801,5999,0,1,1,41,F,84710.00,Single,1,21414.55,0.6,26-Mar-23
+John,Lee,5467389536756464,789 Pine St,Rivertown,TX,Travel,108.34,85.75,349.05,-749.09,Engineer,84.62,N,Costco,Greenville,GA,98101,7011,0,1,4,64,F,65200.00,Single,1,22130.68,0.9,22-May-23
+Alice,Doe,5467389536756435,987 Cedar St,Oldtown,NC,Entertainment,111.00,92.75,359.88,-772.33,Lawyer,312.30,Y ,Travelodge,Salem,NC,48226,5812,1,1,3,32,F,79763.00,Widowed,1,22846.81,0.6,5-Jan-23
+Bob,Lee,5467389536756466,987 Cedar St,Newtown,OH,Travel,113.66,99.75,370.71,-795.57,Teacher,372.36,N,Travelodge,Springfield,NY,10001,7011,1,0,2,67,F,54346.00,Single,1,23562.94,0.8,1-Jan-23
+Grace,Brown,5467389536756467,123 Elm St,Springfield,OH,Beauty,116.32,106.75,381.54,-818.81,Salesperson,354.94,N,Costco,Lakeview,CA,30301,5812,1,0,4,37,M,62271.00,Single,1,24279.07,0.6,28-Nov-23
+Jane,Brown,5467389536756435,234 Aspen St,Springfield,CA,Books,118.98,113.75,392.37,-842.05,Teacher,466.72,Y ,Amazon,Newtown,MI,33801,7011,1,1,3,59,M,53025.00,Single,1,24995.20,0.7,27-Oct-23
+Bob,Adams,5467389536756435,456 Oak St,Lakeview,MI,Groceries,121.64,120.75,403.20,-865.29,Nurse,304.84,Y ,Home Depot,Newtown,GA,98101,5999,1,0,2,51,F,94362.00,Married,1,25711.33,0.8,21-Dec-23
+Bob,Adams,5467389536756435,456 Oak St,Rivertown,GA,Books,124.30,127.75,414.03,-888.53,Chef,301.65,Y ,Walmart,Greenville,TX,75001,5999,0,1,2,67,F,84160.00,Married,1,26427.46,0.4,6-Apr-23
+Bob,Adams,5467389536756471,123 Elm St,Salem,PA,Travel,126.96,134.75,424.86,-911.77,Doctor,371.12,N,Amazon,Franklin,TX,30301,5699,0,0,2,49,M,92324.00,Married,1,27143.59,0.5,27-Sep-23
+Frank,Johnson,5467389536756472,321 Maple St,Salem,FL,Books,129.62,141.75,435.69,-935.01,Artist,365.63,N,Home Depot,Springfield,NC,98101,5411,1,0,3,21,M,55670.00,Single,1,27859.72,0.6,25-Apr-23
+John,Brown,5467389536756473,234 Aspen St,Oldtown,MI,Dining,132.28,148.75,446.52,-958.25,Musician,146.79,N,Costco,Metropolis,IL,62704,4111,1,1,1,57,M,57384.00,Married,1,28575.85,0.6,18-Jan-23
+Jane,Johnson,5467389536756435,234 Aspen St,Oldtown,TX,Books,134.94,155.75,457.35,-981.49,Lawyer,400.65,Y ,Walmart,Oldtown,MI,30301,5999,0,1,3,20,F,75564.00,Single,1,29291.98,0.7,5-May-23
+Hank,Doe,5467389536756435,654 Birch St,Greenville,OH,Entertainment,137.60,162.75,468.18,-1004.73,Doctor,453.18,Y ,Macy's,Newtown,MI,33801,5732,0,0,3,43,M,74865.00,Single,1,30008.11,0.5,25-May-23
+Hank,Adams,5467389536756435,654 Birch St,Franklin,TX,Entertainment,140.26,169.75,479.01,-1027.97,Lawyer,391.91,Y ,Target,Rivertown,OH,10001,5732,0,0,4,33,M,97809.00,Married,1,30724.24,0.6,1-Jan-23
+John,Adams,5467389536756477,123 Elm St,Franklin,PA,Sports,142.92,176.75,489.84,-1051.21,Lawyer,426.20,N,Best Buy,Newtown,TX,75001,4111,1,0,4,28,M,65396.00,Divorced,1,31440.37,0.6,18-Mar-23
+Carol,Brown,5467389536756435,345 Redwood St,Greenville,FL,Groceries,145.58,183.75,500.67,-1074.45,Teacher,425.87,Y ,Travelodge,Rivertown,MI,10001,5411,0,0,5,40,M,48270.00,Single,1,32156.50,0.7,18-Dec-23
+Frank,Adams,5467389536756479,321 Maple St,Springfield,MI,Books,148.24,190.75,511.50,-1097.69,Salesperson,131.33,N,Starbucks,Salem,GA,62704,5411,1,1,3,38,M,59691.00,Single,1,32872.63,0.6,9-Jun-23
+Bob,Johnson,5467389536756480,678 Willow St,Franklin,TX,Entertainment,150.90,197.75,522.33,-1120.93,Driver,415.26,N,Travelodge,Metropolis,OH,33101,5814,1,0,3,36,F,48767.00,Widowed,1,33588.76,0.7,10-Jun-23
+Alice,Adams,5467389536756435,321 Maple St,Oldtown,IL,Clothing,153.56,204.75,533.16,-1144.17,Salesperson,362.30,Y ,Best Buy,Lakeview,OH,48226,5699,1,0,5,33,F,84399.00,Married,1,34304.89,0.8,5-Sep-23
+Frank,White,5467389536756482,789 Pine St,Franklin,OH,Travel,156.22,211.75,543.99,-1167.41,Engineer,168.45,N,Travelodge,Springfield,CA,94105,5812,0,0,3,28,F,83525.00,Widowed,1,35021.02,0.5,10-Mar-23
+Alice,Brown,5467389536756435,456 Oak St,Salem,NC,Travel,158.88,218.75,554.82,-1190.65,Chef,340.59,Y ,Starbucks,Lakeview,MI,90210,4111,1,1,3,26,F,99497.00,Single,1,35737.15,0.7,13-Aug-23
+John,Doe,5467389536756484,456 Oak St,Franklin,TX,Beauty,161.54,225.75,565.65,-1213.89,Salesperson,339.86,N,Costco,Springfield,PA,62704,4789,0,1,5,47,F,72086.00,Widowed,1,36453.28,0.7,17-Dec-23
+2,White,5467389536756435,789 Pine St,Lakeview,MI,Sports,164.20,232.75,576.48,-1237.13,Driver,403.15,Y ,Target,Rivertown,CA,33101,5812,0,0,5,57,M,93242.00,Single,1,37169.41,0.5,4-Apr-23
+Carol,Brown,5467389536756486,456 Oak St,Oldtown,OH,Entertainment,166.86,239.75,587.31,-1260.37,Lawyer,10.03,N,Macy's,Metropolis,GA,48226,5912,0,0,5,55,M,42560.00,Widowed,1,37885.54,0.6,1-Jul-23
+David,Lee,5467389536756435,654 Birch St,Rivertown,OH,Entertainment,169.52,246.75,598.14,-1283.61,Nurse,327.13,Y ,Amazon,Metropolis,CA,33101,5912,0,1,2,60,M,97586.00,Single,1,38601.67,0.8,15-Feb-23
+David,Nelson,5467389536756488,789 Pine St,Greenville,GA,Books,172.18,253.75,608.97,-1306.85,Salesperson,339.72,N,Travelodge,Lakeview,NY,10001,5814,0,0,4,46,M,79853.00,Married,1,39317.80,0.8,24-Jan-23
+Eva,Adams,5467389536756435,987 Cedar St,Hilltown,IL,Electronics,174.84,260.75,619.80,-1330.09,Teacher,292.93,Y ,Walmart,Hilltown,IL,90210,5814,1,0,5,50,F,85470.00,Widowed,1,40033.93,0.6,1-Mar-23
+Grace,Doe,5467389536756435,987 Cedar St,Salem,GA,Sports,177.50,267.75,630.63,-1353.33,Artist,390.92,Y ,Amazon,Newtown,NY,75001,4789,0,0,2,32,F,84382.00,Widowed,1,40750.06,0.6,25-Mar-23
+Carol,Adams,5467389536756491,987 Cedar St,Metropolis,TX,Health,180.16,274.75,641.46,-1376.57,Doctor,80.33,N,Best Buy,Franklin,FL,62704,5814,1,1,4,65,F,44231.00,Divorced,1,41466.19,0.7,12-Jun-23
+Jane,Taylor,5467389536756492,789 Pine St,Springfield,PA,Entertainment,182.82,281.75,652.29,-1399.81,Driver,157.64,N,Travelodge,Newtown,FL,30301,5912,1,0,5,36,F,99309.00,Divorced,1,42182.32,0.6,2-Jun-23
+Carol,Nelson,5467389536756435,987 Cedar St,Franklin,NC,Clothing,185.48,288.75,663.12,-1423.05,Nurse,380.38,Y ,Target,Rivertown,GA,62704,5699,1,0,3,43,F,84831.00,Married,1,42898.45,0.6,19-Feb-23
+Hank,Doe,5467389536756494,678 Willow St,Metropolis,TX,Entertainment,188.14,295.75,673.95,-1446.29,Salesperson,178.03,N,Starbucks,Oldtown,FL,98101,5912,1,0,3,62,M,90251.00,Single,1,43614.58,0.7,15-Nov-23
+Grace,Nelson,5467389536756435,678 Willow St,Greenville,NY,Books,190.80,302.75,684.78,-1469.53,Artist,305.79,Y ,Starbucks,Rivertown,MI,33101,5411,1,1,4,28,M,80176.00,Divorced,1,44330.71,0.5,13-Mar-23
+Jane,Lee,5467389536756435,543 Spruce St,Franklin,MI,Books,193.46,309.75,695.61,-1492.77,Doctor,314.48,Y ,Amazon,Salem,OH,75001,4111,1,1,1,36,M,30163.00,Married,1,45046.84,0.8,9-Dec-23
+Jane,Taylor,5467389536756435,456 Oak St,Hilltown,IL,Beauty,196.12,316.75,706.44,-1516.01,Salesperson,156.32,Y ,Walmart,Oldtown,NY,94105,5912,0,0,4,38,F,35999.00,Married,1,45762.97,0.6,6-Sep-23
+Frank,Brown,5467389536756498,543 Spruce St,Hilltown,TX,Health,198.78,323.75,717.27,-1539.25,Chef,235.85,N,Amazon,Rivertown,TX,33801,4789,1,0,2,30,M,65764.00,Single,1,46479.10,0.8,25-Aug-23
+Hank,Smith,5467389536756435,678 Willow St,Rivertown,IL,Entertainment,201.44,330.75,728.10,-1562.49,Driver,345.55,Y ,Olive Garden,Newtown,IL,33801,5732,0,0,3,35,M,46362.00,Single,1,47195.23,0.9,3-Apr-23
+Hank,Adams,5467389536756435,789 Pine St,Greenville,TX,Travel,204.10,337.75,738.93,-1585.73,Driver,389.09,Y ,Best Buy,Oldtown,MI,48226,5814,0,0,3,58,F,72646.00,Widowed,1,47911.36,0.6,18-Aug-23
+Bob,Doe,5467389536756501,321 Maple St,Oldtown,PA,Dining,206.76,344.75,749.76,-1608.97,Salesperson,327.14,N,Macy's,Metropolis,NC,90210,4111,0,0,5,44,F,66481.00,Widowed,1,48627.49,0.7,16-Apr-23
+Eva,White,5467389536756502,456 Oak St,Salem,CA,Sports,209.42,351.75,760.59,-1632.21,Chef,199.01,N,Starbucks,Metropolis,PA,30301,5732,0,1,2,56,M,30259.00,Married,1,49343.62,0.5,4-Feb-23
+Frank,Nelson,5467389536756435,345 Redwood St,Hilltown,NC,Sports,212.08,358.75,771.42,-1655.45,Driver,25.47,Y ,Target,Salem,NC,94105,4111,0,1,1,67,F,35236.00,Married,1,50059.75,0.8,22-Jan-23
+Alice,Lee,5467389536756504,987 Cedar St,Rivertown,NY,Travel,214.74,365.75,782.25,-1678.69,Doctor,451.49,N,Costco,Metropolis,GA,30301,5732,1,0,2,20,M,87508.00,Married,1,50775.88,0.4,17-Feb-23
+John,Taylor,5467389536756505,345 Redwood St,Newtown,NC,Dining,217.40,372.75,793.08,-1701.93,Chef,14.59,N,Walmart,Franklin,CA,90210,4111,1,1,2,23,F,85722.00,Widowed,1,51492.01,0.8,19-Jan-23
+Bob,Walker,5467389536756435,345 Redwood St,Salem,FL,Entertainment,220.06,379.75,803.91,-1725.17,Lawyer,60.17,Y ,Home Depot,Oldtown,MI,33801,5999,0,0,2,46,F,76100.00,Divorced,1,52208.14,0.5,6-Sep-23
+David,Adams,5467389536756507,789 Pine St,Greenville,NC,Groceries,222.72,386.75,814.74,-1748.41,Chef,393.80,N,Amazon,Lakeview,PA,33801,5699,0,1,2,40,F,75797.00,Single,1,52924.27,0.6,25-Sep-23
+Hank,Adams,5467389536756435,123 Elm St,Rivertown,CA,Clothing,225.38,393.75,825.57,-1771.65,Driver,39.84,Y ,Home Depot,Hilltown,GA,33101,5699,0,1,1,67,M,82483.00,Married,1,53640.40,0.5,23-Nov-23
+Carol,Nelson,5467389536756435,345 Redwood St,Lakeview,TX,Entertainment,228.04,400.75,836.40,-1794.89,Engineer,444.04,Y ,Starbucks,Rivertown,FL,94105,5814,0,0,2,67,F,58499.00,Widowed,1,54356.53,0.5,19-Jun-23
+Carol,Johnson,5467389536756435,456 Oak St,Newtown,NY,Beauty,230.70,407.75,847.23,-1818.13,Chef,450.07,Y ,Macy's,Oldtown,TX,30301,5732,1,1,1,53,M,92615.00,Widowed,1,55072.66,0.7,8-Apr-23
+Eva,Adams,5467389536756435,345 Redwood St,Greenville,FL,Travel,233.36,414.75,858.06,-1841.37,Nurse,37.43,Y ,Walmart,Oldtown,OH,10001,4111,0,1,4,44,M,47054.00,Single,1,55788.79,0.9,24-Nov-23
+Carol,Lee,5467389536756435,123 Elm St,Lakeview,NC,Entertainment,236.02,421.75,868.89,-1864.61,Driver,475.97,Y ,Home Depot,Franklin,NY,75001,5411,0,1,2,38,F,44215.00,Divorced,1,56504.92,0.5,18-Nov-23
+Carol,Lee,5467389536756435,543 Spruce St,Oldtown,MI,Beauty,238.68,428.75,879.72,-1887.85,Nurse,262.09,Y ,Target,Franklin,IL,94105,5411,0,1,5,60,M,79066.00,Married,1,57221.05,0.7,27-Apr-23
+Bob,Nelson,5467389536756435,123 Elm St,Oldtown,FL,Groceries,241.34,435.75,890.55,-1911.09,Nurse,10.34,Y ,Macy's,Franklin,CA,62704,5411,1,0,1,29,M,70452.00,Single,1,57937.18,0.7,25-Feb-23
+Carol,Smith,5467389536756435,654 Birch St,Greenville,NC,Clothing,244.00,442.75,901.38,-1934.33,Engineer,266.45,Y ,Starbucks,Newtown,FL,48226,5999,0,1,1,28,F,67068.00,Widowed,1,58653.31,0.7,5-Jan-23
+Carol,Lee,5467389536756516,234 Aspen St,Salem,FL,Health,246.66,449.75,912.21,-1957.57,Nurse,196.49,N,Olive Garden,Metropolis,IL,94105,5812,1,0,2,27,F,45983.00,Divorced,1,59369.44,0.8,14-Jul-23
+Grace,Adams,5467389536756435,654 Birch St,Rivertown,CA,Beauty,249.32,456.75,923.04,-1980.81,Driver,492.83,Y ,Amazon,Metropolis,OH,98101,5699,0,0,5,48,F,95276.00,Married,1,60085.57,1.0,26-Feb-23
+Carol,Adams,5467389536756518,321 Maple St,Salem,NY,Clothing,251.98,463.75,933.87,-2004.05,Engineer,137.69,N,Target,Newtown,GA,48226,5411,1,1,5,67,F,79579.00,Widowed,1,60801.70,0.7,27-Jul-23
+Bob,Brown,5467389536756435,321 Maple St,Oldtown,MI,Dining,254.64,470.75,944.70,-2027.29,Engineer,228.81,Y ,Amazon,Salem,TX,30301,5912,0,0,2,61,F,58341.00,Widowed,1,61517.83,0.6,20-Oct-23
+Frank,Johnson,5467389536756520,234 Aspen St,Springfield,NY,Clothing,257.30,477.75,955.53,-2050.53,Nurse,56.40,N,Costco,Newtown,NC,48226,4789,1,0,5,39,M,67102.00,Single,1,62233.96,0.9,16-Jun-23
+David,Brown,5467389536756435,234 Aspen St,Lakeview,TX,Clothing,259.96,484.75,966.36,-2073.77,Chef,439.56,Y ,Starbucks,Hilltown,CA,98101,5411,0,0,1,42,F,91066.00,Widowed,1,62950.09,0.5,20-Nov-23
+David,Lee,5467389536756435,678 Willow St,Franklin,NC,Health,262.62,491.75,977.19,-2097.01,Salesperson,28.39,Y ,Starbucks,Rivertown,OH,33801,5411,0,0,2,23,M,65571.00,Married,1,63666.22,0.6,15-Aug-23
+John,Brown,5467389536756435,123 Elm St,Hilltown,MI,Entertainment,265.28,498.75,988.02,-2120.25,Chef,387.91,Y ,Travelodge,Rivertown,NC,10001,5999,1,0,2,34,M,54619.00,Widowed,1,64382.35,0.7,19-Jan-23
+Jane,Lee,5467389536756524,321 Maple St,Rivertown,PA,Electronics,267.94,505.75,998.85,-2143.49,Chef,146.38,N,Costco,Franklin,IL,30301,5732,1,1,2,22,M,89142.00,Single,1,65098.48,0.7,26-Dec-23
+David,Taylor,5467389536756435,234 Aspen St,Hilltown,PA,Groceries,270.60,512.75,1009.68,-2166.73,Lawyer,78.18,Y ,Costco,Franklin,GA,30301,5999,0,0,4,43,M,63479.00,Single,1,65814.61,0.7,1-Feb-23
+Hank,Walker,5467389536756526,678 Willow St,Newtown,NY,Clothing,273.26,519.75,1020.51,-2189.97,Lawyer,353.71,N,Travelodge,Lakeview,CA,94105,4789,0,0,2,63,M,77616.00,Divorced,1,66530.74,0.6,28-May-23
+Bob,Doe,5467389536756435,678 Willow St,Springfield,TX,Clothing,275.92,526.75,1031.34,-2213.21,Teacher,316.00,Y ,Walmart,Springfield,PA,90210,5912,0,1,3,44,F,55139.00,Divorced,1,67246.87,0.6,5-Oct-23
+John,Adams,5467389536756528,456 Oak St,Lakeview,PA,Books,278.58,533.75,1042.17,-2236.45,Chef,27.44,N,Walmart,Salem,NC,62704,5912,1,1,3,40,M,94352.00,Widowed,1,67963.00,0.7,7-Jun-23
+David,White,5467389536756529,234 Aspen St,Rivertown,IL,Books,281.24,540.75,1053.00,-2259.69,Engineer,200.20,N,Macy's,Metropolis,MI,48226,5814,1,1,1,55,M,94535.00,Widowed,1,68679.13,0.6,21-Feb-23
+John,Lee,5467389536756435,654 Birch St,Hilltown,GA,Electronics,283.90,547.75,1063.83,-2282.93,Chef,282.28,Y ,Travelodge,Salem,CA,62704,5812,1,1,4,66,F,93175.00,Widowed,1,69395.26,0.8,13-Jul-23
+Jane,Taylor,5467389536756531,678 Willow St,Hilltown,IL,Dining,286.56,554.75,1074.66,-2306.17,Doctor,184.66,N,Costco,Lakeview,FL,90210,4111,1,1,4,52,M,75856.00,Divorced,1,70111.39,0.6,4-Nov-23
+Alice,Adams,5467389536756435,123 Elm St,Hilltown,MI,Travel,289.22,561.75,1085.49,-2329.41,Musician,319.54,Y ,Target,Oldtown,NC,33801,5912,0,0,5,54,F,46386.00,Divorced,1,70827.52,0.7,19-Jun-23
+Carol,Johnson,5467389536756435,654 Birch St,Springfield,PA,Health,291.88,568.75,1096.32,-2352.65,Chef,236.67,Y ,Macy's,Hilltown,GA,90210,5814,1,0,2,62,F,54230.00,Widowed,1,71543.65,0.6,14-May-23
+Alice,Brown,5467389536756435,345 Redwood St,Springfield,OH,Sports,294.54,575.75,1107.15,-2375.89,Teacher,326.70,Y ,Costco,Greenville,PA,33101,4111,1,0,3,48,F,98876.00,Divorced,1,72259.78,0.8,20-May-23
